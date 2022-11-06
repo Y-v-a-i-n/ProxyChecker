@@ -3,7 +3,8 @@ body{
     background: url("../img/wallpaperflare.com_wallpaper.jpg") center/cover;
     color: white
 }
-#input:focus,
+#inputA:focus,
+#inputB:focus,
 #outputA:focus,
 #outputB:focus,
 #button:focus,
@@ -20,16 +21,23 @@ textarea::-webkit-scrollbar{
     width: 1em;
 }
 textarea::-webkit-scrollbar-thumb{
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: rgb(0, 0, 0);
+  outline: 1px solid transparent;
+  border-radius:10px
 }
-#input,
+::placeholder {
+    color:rgb(0, 0, 0);
+    opacity: 0.5;
+}
+#inputA,
+#inputB,
 #outputA,
 #outputB{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #00000050;
     border-color: transparent;
-    border-radius: 20px
+    border-radius: 20px;
+    color:black;
 }
 #type,
 #button{

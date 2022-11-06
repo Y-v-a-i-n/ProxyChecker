@@ -9,6 +9,7 @@ const createWindow = () => {
         frame: !0,
         width: 1e3,
         height: 600,
+        resizable: !1,
         icon: __dirname + "\\img\\351-01-1024-13999035.png",
         show: !0,
         autoHideMenuBar: !0,

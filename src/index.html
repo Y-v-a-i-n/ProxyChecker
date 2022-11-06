@@ -12,10 +12,15 @@
     <center>
         <span>
             <h1>Proxy Checker</h1>
-            <textarea cols=125 id=input rows=11 placeholder="103.197.251.202:80
+            <textarea cols=80 id=inputA rows=11 placeholder="http://ab57.ru/downloads/proxyold.txt
+http://alexa.lr2b.com/proxylist.txt
+http://free-fresh-proxy-daily.blogspot.com/feeds/posts/default
+http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http..."></textarea>
+            <textarea cols=40 id=inputB rows=11 placeholder="103.197.251.202:80
 177.71.77.202:20183
 190.196.20.166:42536
 188.0.147.102:3128..."></textarea></br>
+            <button id=button onclick="scrap(document.getElementById('inputA').value)">Scrap !</button>
             <select id=type onchange="Update()">
                 <option value=0 selected>HTTP</option>
                 <option value=1>HTTPS</option>
@@ -23,9 +28,12 @@
                 <option value=3>SOCKS5</option>
                 <option value=4>ALL</option>
             </select>
-            <button id=button onclick="check(document.getElementById('input').value,document.getElementById('type').value)">Start !</button></br>
+            <button id=button onclick="check(document.getElementById('inputB').value,document.getElementById('type').value)">Start !</button></br>
             <textarea cols=80 id=outputA readonly  rows=11></textarea>  <textarea cols=40 id=outputB readonly  rows=11></textarea></br>
         </span>
     </center>
+    <script>
+        document.getElementById('inputA').value=require("./urls.json").join("\n")
+    </script>
 </body>
 </html>
