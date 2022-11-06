@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>Proxy Checker</title>
+</head>
+<body>
+    <center>
+        <span>
+            <h1>Proxy Checker</h1>
+            <textarea cols=125 id=input rows=11 placeholder="103.197.251.202:80
+177.71.77.202:20183
+190.196.20.166:42536
+188.0.147.102:3128..."></textarea></br>
+            <select id=type onchange="Update()">
+                <option value=0 selected>HTTP</option>
+                <option value=1>HTTPS</option>
+                <option value=2>SOCKS4</option>
+                <option value=3>SOCKS5</option>
+                <option value=4>ALL</option>
+            </select>
+            <button id=button onclick="check(document.getElementById('input').value,document.getElementById('type').value)">Start !</button></br>
+            <textarea cols=80 id=outputA readonly  rows=11></textarea>  <textarea cols=40 id=outputB readonly  rows=11></textarea></br>
+        </span>
+    </center>
+</body>
+</html>

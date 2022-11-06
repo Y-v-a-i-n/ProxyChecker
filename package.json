@@ -1,0 +1,16 @@
+{
+  "name": "proxychecker",
+  "version": "1.0.0",
+  "description": "A simple proxy checker (HTTP/HTTPS/SOCKS4/SOCKS5)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yvain",
+  "license": "ISC",
+  "dependencies": {
+    "geoip-lite": "^1.4.6",
+    "request": "^2.88.2",
+    "throttled-queue": "^2.1.4"
+  }
+}
