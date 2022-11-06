@@ -33,7 +33,9 @@ http://proxysearcher.sourceforge.net/Proxy%20List.php?type=http..."></textarea>
         </span>
     </center>
     <script>
-        document.getElementById('inputA').value=require("./urls.json").join("\n")
+        var inputA = document.getElementById('inputA')            
+        inputA.value=require("./urls.json").join("\n")
+        inputA.scrollTop = inputA.scrollHeight
     </script>
 </body>
 </html>
