@@ -3,7 +3,7 @@
 
 ![image](https://cdn.discordapp.com/attachments/1025769112221270050/1038829736127901768/image.png)
 
-### Comment lancer ProxyChecker ? 
+### How to start ProxyChecker ? 
 
 ```sh
 $ npm install electron -g
